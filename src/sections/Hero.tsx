@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section>
-      <h1>Outcome Infrastructure</h1>
+      <h1>🚨 TEST HERO CHANGE 🚨</h1>
       <h2>The Missing Link for AI</h2>
 
       <p>
