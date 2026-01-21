@@ -1,18 +1,23 @@
 import Hero from "./sections/Hero";
-import DecisionConsole from "./sections/DecisionConsole";
-import GovernanceConsole from "./sections/GovernanceConsole";
-import ExecutionConsole from "./sections/ExecutionConsole";
+import DecisionWait from "./sections/DecisionWait";
+import DecisionAllow from "./sections/DecisionAllow";
+import FrictionIndex from "./sections/FrictionIndex";
+import Governance from "./sections/Governance";
+import Plans from "./sections/Plans";
+import NativeOutcome from "./sections/NativeOutcome";
 import Closing from "./sections/Closing";
-import { page } from "./styles";
 
 export default function App() {
   return (
-    <div style={page}>
+    <>
       <Hero />
-      <DecisionConsole />
-      <GovernanceConsole />
-      <ExecutionConsole />
+      <DecisionWait />
+      <DecisionAllow />
+      <FrictionIndex />
+      <Governance />
+      <Plans />
+      <NativeOutcome />
       <Closing />
-    </div>
+    </>
   );
 }
