@@ -1,46 +1,79 @@
+import { useState } from "react";
+import { heading, paragraph, plansGrid, textBlock } from "../styles";
+
 export function Plans() {
+  const [isHover, setIsHover] = useState(false);
   return (
-    <section>
-      <h2>Plans</h2>
+    <section style={{ width: "100%", marginTop: 48 }}>
+      <div style={textBlock}>
+        <h2 style={heading}>Plans</h2>
+      </div>
 
-      <h3>Gov Start Up</h3>
-      <p>
-        Controlled outcome within strict boundaries.
-        Mandate decides whether AI is allowed to act.
-        The Max Outcome Engine determines when.
-        Limited volume per channel.
-        Fully compliant, minimal risk accumulation.
-        1 Policy Pack included.
-      </p>
+      <div style={{ ...plansGrid, marginTop: 25 }}>
+        <div>
+          <h3 style={heading}>Start Up</h3>
+          <p style={paragraph}>
+            Controlled outcome within strict boundaries.
+            Mandate decides whether AI is allowed to act.
+            The Max Outcome Engine determines when.
+            Limited volume per channel.
+            Fully compliant, minimal risk accumulation.
+            1 Policy Pack included
+          </p>
+        </div>
 
-      <h3>Gov Growth</h3>
-      <p>
-        Start Up plus better timing and ordering for higher outcome.
-        More context, broader limits.
-        More volume per channel.
-        Extended auditability and insight.
-        Basic governance reporting.
-        3 Policy Packs included.
-      </p>
+        <div>
+          <h3 style={heading}>Growth</h3>
+          <p style={paragraph}>
+            Start Up +
+            Better timing and ordering for higher outcome.
+            More context, broader limits.
+            More volume per channel.
+            Extended auditability and insight.
+            Basic governance reporting.
+            3 Policy Packs included
+          </p>
+        </div>
 
-      <h3>Gov Enterprise</h3>
-      <p>
-        Maximum outcome with demonstrable accountability.
-        Unlimited volume per channel.
-        Value Surface integrated into your own software.
-        Autonomy where permitted, blocking where required.
-        Full governance, assurance, and reporting.
-        Board- and regulator-ready.
-      </p>
+        <div>
+          <h3 style={heading}>Enterprise</h3>
+          <p style={paragraph}>
+            Growth+
+            Maximum outcome with demonstrable accountability.
+            Unlimited volume per channel.
+            Value Surface integrated into your own software.
+            Autonomy where permitted, blocking where required.
+            Full governance, assurance, and reporting.
+            Board- and regulator-ready
+          </p>
+        </div>
+      </div>
 
-      <h3>Native Outcome Infrastructure</h3>
-      <p>
-        Native Outcome Infrastructure is a category, not a plan.
-        It replaces existing software with an AI-native architecture.
-        Mandate, the Max Outcome Decision Engine, and the Value Surface
-        form the core. Migration and implementation are delivered by
-        certified partners.
-      </p>
+      <div style={{ marginTop: 25 }}>
+        <a
+          href="https://calendly.com/cyrilvink/outcome-meeting"
+          target="_blank"
+          rel="noreferrer"
+          onMouseEnter={() => setIsHover(true)}
+          onMouseLeave={() => setIsHover(false)}
+          style={{
+            padding: "10px 18px",
+            borderRadius: 8,
+            border: "1px solid #9A8463",
+            background: "transparent",
+            color: "#E6E2DA",
+            fontWeight: 600,
+            cursor: "pointer",
+            boxShadow: isHover ? "0 0 12px rgba(154,132,99,0.35)" : "none",
+            filter: isHover ? "brightness(1.08)" : "none",
+            transition: "box-shadow 160ms ease, filter 160ms ease",
+            display: "inline-block",
+            textDecoration: "none",
+          }}
+        >
+          Contact Sales
+        </a>
+      </div>
     </section>
   );
 }

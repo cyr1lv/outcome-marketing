@@ -1,17 +1,17 @@
+import { heading, paragraph, textBlock } from "../styles";
+
 export function GovernanceSection() {
   return (
-    <section>
-      <h2>Governance and control</h2>
-
-      <p>
-        Outcome is governed through enforceable policy packs.
-        Autonomy where permitted. Blocking where required.
+    <div style={textBlock}>
+      <h2 style={heading}>Friction Index</h2>
+      <p style={paragraph}>
+        The Friction Index measures the misalignment between intent, timing, and
+        governance. It advises how much friction is required to balance risk and outcome
+        before execution.
       </p>
-
-      <p>
-        The Friction Index shows where governance limits value or exposes risk —
-        and where policy adjustments improve outcome.
+      <p style={paragraph}>
+        <strong>Max Outcome = decisions × probability × value × timing − risk</strong>
       </p>
-    </section>
+    </div>
   );
 }

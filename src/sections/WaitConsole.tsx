@@ -1,15 +1,44 @@
-import { metalPanel, tilt, colors } from "../styles";
+import { ConsoleFrame, ConsoleLabel } from "../components/Console";
+import { colors } from "../styles";
 
 export function WaitConsole() {
   return (
-    <div style={{ ...metalPanel, ...tilt(-4) }}>
-      <div style={{ fontSize: 12, color: colors.muted }}>Decision</div>
-      <div style={{ fontSize: 40, fontWeight: 700, color: colors.wait, margin: "12px 0" }}>
-        WAIT
-      </div>
-      <div style={{ color: colors.muted }}>
-        Context incomplete · risk window detected
-      </div>
-    </div>
+    <ConsoleFrame offsetTop={196}>
+      <ConsoleLabel>Decision — WAIT</ConsoleLabel>
+
+        <div style={{ marginTop: 16 }}>
+          <ConsoleLabel>Status</ConsoleLabel>
+          <div style={{ fontSize: 28, fontWeight: 700, color: colors.wait, marginTop: 4 }}>
+            WAIT
+          </div>
+        </div>
+
+        <div style={{ marginTop: 16 }}>
+          <ConsoleLabel>Reason</ConsoleLabel>
+          <div style={{ color: colors.text, fontSize: 13, marginTop: 4 }}>
+            Context incomplete
+            <br />
+            Risk window detected
+          </div>
+        </div>
+
+        <div style={{ marginTop: 16 }}>
+          <ConsoleLabel>Signal state</ConsoleLabel>
+          <ul style={{ marginTop: 6, paddingLeft: 18, color: colors.text, fontSize: 12 }}>
+            <li>Intent present</li>
+            <li>Timing uncertain</li>
+            <li>Risk elevated</li>
+          </ul>
+        </div>
+
+        <div style={{ marginTop: 16 }}>
+          <ConsoleLabel>System</ConsoleLabel>
+          <div style={{ color: colors.text, fontSize: 12, marginTop: 4 }}>
+            Execution deferred
+            <br />
+            No action allowed
+          </div>
+        </div>
+    </ConsoleFrame>
   );
 }
