@@ -6,7 +6,7 @@ export default function NativeOutcome() {
       <p>
         Replaces existing software with an AI-native architecture.
         Mandate, the Max Outcome Decision Engine, and the Value Surface
-        form the core. Migration and implementation delivered by
+        form the core. Migration and implementation are delivered by
         certified partners.
       </p>
     </section>

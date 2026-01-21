@@ -4,15 +4,22 @@ export default function FrictionIndex() {
       <h3>Friction Index</h3>
 
       <p>
-        The Friction Index measures the misalignment between intent, timing,
-        and governance. It advises how much friction is required to balance
-        risk and outcome before execution.
+        The Friction Index shows where governance is blocking value
+        or exposing risk — and where policy changes can improve outcome.
       </p>
 
       <p>
-        <strong>
-          Max Outcome = decisions × probability × value × timing − risk
-        </strong>
+        Three neutral indicators represent relative friction for
+        ALLOW, WAIT, and BLOCK.
+      </p>
+
+      <p>
+        Month-on-Month improvement indicates increasing success
+        with lower accumulated risk (e.g. 12%+).
+      </p>
+
+      <p>
+        Improve revenue by adjusting governance — not by increasing activity.
       </p>
     </section>
   );
