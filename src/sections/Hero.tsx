@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <div>
+    <section>
       <h1>Outcome Infrastructure</h1>
       <h2>The Missing Link for AI</h2>
 
@@ -12,9 +12,16 @@ export function Hero() {
       <p>We are the law for AI — and within the law, we maximize outcome.</p>
 
       <p>
-        AI is entering a regulated era. Frameworks such as the EU AI Act,
-        GDPR and SOC 2 require control, accountability and auditability.
+        People and organizations operate within legislation, policy, and
+        responsibility. AI agents do not do this by default. AI optimizes for
+        volume unless you explicitly define what is allowed — and what is never
+        allowed.
       </p>
-    </div>
+
+      <p>
+        AI is entering a regulated era. Frameworks such as the EU AI Act, GDPR,
+        and SOC 2 require control, accountability, and auditability by design.
+      </p>
+    </section>
   );
 }

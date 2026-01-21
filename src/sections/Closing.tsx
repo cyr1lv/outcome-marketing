@@ -1,4 +1,4 @@
-export default function Closing() {
+export function Closing() {
   return (
     <section>
       <p>
