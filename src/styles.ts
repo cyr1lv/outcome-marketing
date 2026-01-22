@@ -34,7 +34,7 @@ export const row: React.CSSProperties = {
 };
 
 export const textBlock: React.CSSProperties = {
-  maxWidth: 720,
+  maxWidth: 600,
   display: "grid",
   gap: 12,
 };
