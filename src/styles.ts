@@ -22,7 +22,7 @@ export const page: React.CSSProperties = {
 export const container: React.CSSProperties = {
   maxWidth: 1200,
   margin: "0 auto",
-  padding: "32px 24px 64px",
+  padding: "16px 24px 64px",
   display: "flex",
   flexDirection: "column",
   gap: 32,

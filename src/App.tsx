@@ -20,6 +20,10 @@ export default function App() {
           <div className="site-logo-frame">
             <div role="img" aria-label="Outcome Infrastructure logo" className="site-logo-mark" />
           </div>
+          <div className="site-header-title">
+            <div className="site-header-title-main">Outcome Infrastructure</div>
+            <div className="site-header-title-sub">The Missing Link for AI</div>
+          </div>
           <nav className="site-nav">
             <a href="/docs">Developer Docs</a>
             <a href="/partner">Partner</a>

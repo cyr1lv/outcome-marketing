@@ -16,13 +16,33 @@ body {
 }
 
 .site-header-inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between;
   gap: 16px;
   padding: 16px 24px;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.site-header-title {
+  text-align: center;
+}
+
+.site-header-title-main {
+  color: #9a8463;
+  font-size: clamp(20px, 2.6vw, 28px);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+
+.site-header-title-sub {
+  margin-top: 4px;
+  color: #9a9a9a;
+  font-size: clamp(10px, 1.4vw, 12px);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
 }
 
 .layout-row {
@@ -95,12 +115,12 @@ button {
 
 .hero-section {
   display: grid;
-  gap: 16px;
+  gap: 12px;
 }
 
 .hero-body {
   max-width: 640px;
-  margin: 24px auto 0;
+  margin: 16px auto 0;
   text-align: left;
   display: grid;
   gap: 12px;
@@ -122,8 +142,8 @@ button {
   }
 
   .site-header-inner {
-    flex-direction: column;
-    align-items: flex-start;
+    grid-template-columns: 1fr;
+    justify-items: start;
   }
 
   .site-logo-mark {
@@ -137,6 +157,10 @@ button {
     font-size: 11px;
     padding: 4px 8px;
     gap: 8px;
+  }
+
+  .site-header-title {
+    text-align: left;
   }
 
   .site-container {

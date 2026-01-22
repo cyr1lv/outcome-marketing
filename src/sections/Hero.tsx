@@ -1,13 +1,8 @@
-import { heroHeading, paragraph, subheading, textBlock } from "../styles";
+import { paragraph, textBlock } from "../styles";
 
 export function Hero() {
   return (
-    <section style={{ width: "100%" }} className="hero-section">
-      <div className="hero-title">
-        <h1 style={heroHeading}>Outcome Infrastructure</h1>
-        <h2 style={subheading}>The Missing Link for AI</h2>
-      </div>
-
+    <section style={{ width: "100%", marginTop: 0 }} className="hero-section">
       <div className="hero-body" style={{ ...textBlock, maxWidth: 640 }}>
         <p style={paragraph}>
           Outcome Infrastructure consists of four core components:
