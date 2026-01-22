@@ -25,7 +25,7 @@ export const container: React.CSSProperties = {
   padding: "16px 24px 64px",
   display: "flex",
   flexDirection: "column",
-  gap: 32,
+  gap: 24,
 };
 
 export const row: React.CSSProperties = {
