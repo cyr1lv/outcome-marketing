@@ -51,9 +51,7 @@ export function Plans() {
 
       <div style={{ marginTop: 25 }}>
         <a
-          href="https://calendly.com/cyrilvink/outcome-meeting"
-          target="_blank"
-          rel="noreferrer"
+          href="mailto:sales@outcomeinfrastructure.com"
           onMouseEnter={() => setIsHover(true)}
           onMouseLeave={() => setIsHover(false)}
           style={{

@@ -20,9 +20,9 @@ function Partner() {
     <main style={page}>
       <header className="site-header">
         <div className="site-header-inner">
-          <div className="site-logo-frame">
+          <a href="/" className="site-logo-frame" aria-label="Outcome Infrastructure home">
             <div role="img" aria-label="Outcome Infrastructure logo" className="site-logo-mark" />
-          </div>
+          </a>
           <div className="site-header-title">
             <div className="site-header-title-main">Outcome Infrastructure</div>
             <div className="site-header-title-sub">Certified Implementation Partners</div>
