@@ -6,7 +6,7 @@ export function AllowConsole() {
     <ConsoleFrame>
       <ConsoleLabel>Decision — ALLOW</ConsoleLabel>
 
-        <div style={{ marginTop: 12 }}>
+        <div style={{ marginTop: 8 }}>
           <ConsoleLabel>Status</ConsoleLabel>
           <div
             style={{
@@ -20,7 +20,7 @@ export function AllowConsole() {
           </div>
         </div>
 
-        <div style={{ marginTop: 12 }}>
+        <div style={{ marginTop: 8 }}>
           <ConsoleLabel>Reason</ConsoleLabel>
           <div style={{ color: colors.text, fontSize: "clamp(12px, 1.8vw, 13px)", marginTop: 4 }}>
             All required signals validated
@@ -29,7 +29,7 @@ export function AllowConsole() {
           </div>
         </div>
 
-        <div style={{ marginTop: 12 }}>
+        <div style={{ marginTop: 8 }}>
           <ConsoleLabel>Signal state</ConsoleLabel>
           <ul
             style={{
@@ -45,7 +45,7 @@ export function AllowConsole() {
           </ul>
         </div>
 
-        <div style={{ marginTop: 12 }}>
+        <div style={{ marginTop: 8 }}>
           <ConsoleLabel>System</ConsoleLabel>
           <div style={{ color: colors.text, fontSize: "clamp(11px, 1.6vw, 12px)", marginTop: 4 }}>
             Execution permitted
@@ -54,12 +54,12 @@ export function AllowConsole() {
           </div>
         </div>
 
-        <div style={{ marginTop: 12 }}>
+        <div style={{ marginTop: 8 }}>
           <ConsoleLabel>Actions</ConsoleLabel>
-          <div style={{ display: "flex", justifyContent: "flex-end", gap: 12, marginTop: 8 }}>
+          <div style={{ display: "flex", justifyContent: "flex-end", gap: 10, marginTop: 6 }}>
             <button
               style={{
-                padding: "10px 18px",
+                padding: "8px 14px",
                 borderRadius: 8,
                 border: `1px solid ${colors.border}`,
                 background: colors.allow,
@@ -73,7 +73,7 @@ export function AllowConsole() {
             </button>
             <button
               style={{
-                padding: "8px 14px",
+                padding: "6px 12px",
                 borderRadius: 8,
                 border: `1px solid ${colors.border}`,
                 background: "transparent",

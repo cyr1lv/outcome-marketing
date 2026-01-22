@@ -12,7 +12,7 @@ export function FrictionConsole() {
     <ConsoleFrame>
       <ConsoleLabel>Friction Index</ConsoleLabel>
 
-        <div style={{ display: "flex", gap: 16, margin: "12px 0" }}>
+        <div style={{ display: "flex", gap: 12, margin: "8px 0" }}>
           {indicators.map((indicator) => (
             <div key={indicator.label} style={{ textAlign: "center" }}>
               <div
@@ -44,20 +44,20 @@ export function FrictionConsole() {
           ))}
         </div>
 
-        <div style={{ color: colors.muted, marginBottom: 12, fontSize: "clamp(11px, 1.6vw, 12px)" }}>
+        <div style={{ color: colors.muted, marginBottom: 8, fontSize: "clamp(11px, 1.6vw, 12px)" }}>
           Month-on-Month improvement · 12%+
         </div>
 
-        <div style={{ marginTop: 12 }}>
+        <div style={{ marginTop: 8 }}>
           <ConsoleLabel>Policy guidance</ConsoleLabel>
         </div>
-        <div style={{ marginTop: 6, fontSize: "clamp(11px, 1.6vw, 12px)" }}>
+        <div style={{ marginTop: 4, fontSize: "clamp(11px, 1.6vw, 12px)" }}>
           <div style={{ fontSize: "clamp(11px, 1.6vw, 12px)", color: colors.muted }}>
             Increase outcome
           </div>
           <ul
             style={{
-              marginTop: 6,
+              marginTop: 4,
               paddingLeft: 18,
               color: colors.text,
               fontSize: "clamp(10px, 1.5vw, 11px)",
@@ -70,14 +70,14 @@ export function FrictionConsole() {
             style={{
               fontSize: "clamp(10px, 1.5vw, 11px)",
               color: colors.muted,
-              marginTop: 10,
+              marginTop: 8,
             }}
           >
             Reduce risk
           </div>
           <ul
             style={{
-              marginTop: 6,
+              marginTop: 4,
               paddingLeft: 18,
               color: colors.text,
               fontSize: "clamp(10px, 1.5vw, 11px)",
@@ -92,7 +92,7 @@ export function FrictionConsole() {
           style={{
             fontSize: "clamp(11px, 1.6vw, 12px)",
             color: colors.muted,
-            marginTop: 16,
+            marginTop: 12,
           }}
         >
           Improve revenue by adjusting governance — not by increasing activity.
