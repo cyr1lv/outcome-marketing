@@ -34,7 +34,7 @@ function Partner() {
       </header>
       <div style={container} className="site-container">
         <section style={sectionStyle}>
-          <div className="hero-title">
+          <div>
             <h1 style={heading}>Certified Implementation Partners</h1>
           </div>
           <p style={paragraph}>

@@ -41,10 +41,10 @@ function Docs() {
       </header>
       <div style={container} className="site-container">
         <section style={sectionStyle}>
-          <div className="hero-title">
+          <div>
             <h1 style={heading}>Outcome Infrastructure — Developer Documentation</h1>
           </div>
-          <div style={{ textAlign: "center" }}>
+          <div>
             <p style={paragraph}>
               Outcome Infrastructure is decision infrastructure for AI systems.
             </p>
