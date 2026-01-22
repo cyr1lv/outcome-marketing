@@ -30,6 +30,10 @@ function Docs() {
           <div className="site-logo-frame">
             <div role="img" aria-label="Outcome Infrastructure logo" className="site-logo-mark" />
           </div>
+          <div className="site-header-title">
+            <div className="site-header-title-main">Outcome Infrastructure</div>
+            <div className="site-header-title-sub">Developer Documentation</div>
+          </div>
           <nav className="site-nav">
             <a href="/">Home</a>
           </nav>

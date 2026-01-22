@@ -23,6 +23,10 @@ function Partner() {
           <div className="site-logo-frame">
             <div role="img" aria-label="Outcome Infrastructure logo" className="site-logo-mark" />
           </div>
+          <div className="site-header-title">
+            <div className="site-header-title-main">Outcome Infrastructure</div>
+            <div className="site-header-title-sub">Certified Implementation Partners</div>
+          </div>
           <nav className="site-nav">
             <a href="/">Home</a>
           </nav>
@@ -33,10 +37,10 @@ function Partner() {
           <div className="hero-title">
             <h1 style={heading}>Certified Implementation Partners</h1>
           </div>
-          <p style={{ ...paragraph, textAlign: "center" }}>
+          <p style={paragraph}>
             Native Outcome Infrastructure is implemented by certified partners.
           </p>
-          <p style={{ ...paragraph, textAlign: "center" }}>
+          <p style={paragraph}>
             Outcome Infrastructure is decision and governance infrastructure — not a
             services platform.
             <br />
