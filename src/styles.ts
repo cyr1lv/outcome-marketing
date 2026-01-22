@@ -82,7 +82,7 @@ export const metalPanel: React.CSSProperties = {
   border: `1px solid ${colors.border}`,
   borderRadius: 8,
   boxShadow: "0 24px 40px rgba(0,0,0,.45)",
-  padding: 24,
+  padding: 20,
 };
 
 export const consoleEdge: React.CSSProperties = {
@@ -98,7 +98,7 @@ export const consoleEdge: React.CSSProperties = {
 export const consoleShell: React.CSSProperties = {
   position: "relative",
   display: "block",
-  width: "min(420px, 100%)",
+  width: "min(360px, 100%)",
   justifySelf: "end",
   alignSelf: "start",
 };
@@ -107,8 +107,8 @@ export const consoleFace: React.CSSProperties = {
   ...metalPanel,
   position: "relative",
   zIndex: 1,
-  width: "min(420px, 100%)",
-  minHeight: 280,
+  width: "min(360px, 100%)",
+  minHeight: 240,
   boxSizing: "border-box",
 };
 

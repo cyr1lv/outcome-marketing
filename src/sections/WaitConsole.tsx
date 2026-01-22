@@ -6,7 +6,7 @@ export function WaitConsole() {
     <ConsoleFrame>
       <ConsoleLabel>Decision — WAIT</ConsoleLabel>
 
-        <div style={{ marginTop: 16 }}>
+        <div style={{ marginTop: 12 }}>
           <ConsoleLabel>Status</ConsoleLabel>
           <div
             style={{
@@ -20,7 +20,7 @@ export function WaitConsole() {
           </div>
         </div>
 
-        <div style={{ marginTop: 16 }}>
+        <div style={{ marginTop: 12 }}>
           <ConsoleLabel>Reason</ConsoleLabel>
           <div style={{ color: colors.text, fontSize: "clamp(12px, 1.8vw, 13px)", marginTop: 4 }}>
             Context incomplete
@@ -29,7 +29,7 @@ export function WaitConsole() {
           </div>
         </div>
 
-        <div style={{ marginTop: 16 }}>
+        <div style={{ marginTop: 12 }}>
           <ConsoleLabel>Signal state</ConsoleLabel>
           <ul
             style={{
@@ -45,7 +45,7 @@ export function WaitConsole() {
           </ul>
         </div>
 
-        <div style={{ marginTop: 16 }}>
+        <div style={{ marginTop: 12 }}>
           <ConsoleLabel>System</ConsoleLabel>
           <div style={{ color: colors.text, fontSize: "clamp(11px, 1.6vw, 12px)", marginTop: 4 }}>
             Execution deferred

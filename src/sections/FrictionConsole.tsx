@@ -12,7 +12,7 @@ export function FrictionConsole() {
     <ConsoleFrame>
       <ConsoleLabel>Friction Index</ConsoleLabel>
 
-        <div style={{ display: "flex", gap: 16, margin: "16px 0" }}>
+        <div style={{ display: "flex", gap: 16, margin: "12px 0" }}>
           {indicators.map((indicator) => (
             <div key={indicator.label} style={{ textAlign: "center" }}>
               <div
@@ -44,11 +44,11 @@ export function FrictionConsole() {
           ))}
         </div>
 
-        <div style={{ color: colors.muted, marginBottom: 16, fontSize: "clamp(11px, 1.6vw, 12px)" }}>
+        <div style={{ color: colors.muted, marginBottom: 12, fontSize: "clamp(11px, 1.6vw, 12px)" }}>
           Month-on-Month improvement · 12%+
         </div>
 
-        <div style={{ marginTop: 16 }}>
+        <div style={{ marginTop: 12 }}>
           <ConsoleLabel>Policy guidance</ConsoleLabel>
         </div>
         <div style={{ marginTop: 6, fontSize: "clamp(11px, 1.6vw, 12px)" }}>
