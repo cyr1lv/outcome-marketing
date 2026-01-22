@@ -2,7 +2,7 @@ import { heading, paragraph, textBlock } from "../styles";
 
 export function MandateEngine() {
   return (
-    <div style={{ ...textBlock, marginTop: -127 }}>
+    <div style={textBlock}>
       <h2 style={heading}>Mandate</h2>
       <p style={paragraph}>
         Mandate translates legislation, policy, and risk into enforceable rules for AI.

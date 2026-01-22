@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { container, heading, page, paragraph } from "./styles";
+import "./global.css";
 
 const sectionStyle: React.CSSProperties = {
   display: "grid",
@@ -24,76 +25,17 @@ const sectionsGrid: React.CSSProperties = {
 function Docs() {
   return (
     <main style={page}>
-      <div
-        style={{
-          position: "fixed",
-          top: 16,
-          left: 16,
-          border: "3px solid #9A8463",
-          borderRadius: 0,
-          padding: 8,
-          zIndex: 2,
-          background: "transparent",
-        }}
-      >
-        <div
-          role="img"
-          aria-label="Outcome Infrastructure logo"
-          style={{
-            width: 95,
-            height: 95,
-            backgroundColor: "#9A8463",
-            WebkitMaskImage: "url(/logo.png)",
-            maskImage: "url(/logo.png)",
-            WebkitMaskRepeat: "no-repeat",
-            maskRepeat: "no-repeat",
-            WebkitMaskPosition: "center",
-            maskPosition: "center",
-            WebkitMaskSize: "contain",
-            maskSize: "contain",
-          }}
-        />
-      </div>
-      <div
-        style={{
-          position: "fixed",
-          top: 20,
-          right: 20,
-          display: "flex",
-          gap: 12,
-          padding: "6px 10px",
-          border: "1px solid #2A2A2E",
-          borderRadius: 999,
-          background: "rgba(11, 11, 12, 0.85)",
-          fontSize: 12,
-          letterSpacing: "0.08em",
-          zIndex: 2,
-        }}
-      >
-        <a
-          href="/"
-          style={{
-            color: "#E6E2DA",
-            textDecoration: "none",
-            borderBottom: "1px solid transparent",
-          }}
-          onMouseEnter={(event) => (event.currentTarget.style.borderBottomColor = "#9A8463")}
-          onMouseLeave={(event) => (event.currentTarget.style.borderBottomColor = "transparent")}
-        >
-          Home
-        </a>
-      </div>
-      <div style={container}>
+      <header className="site-header">
+        <div className="site-logo-frame">
+          <div role="img" aria-label="Outcome Infrastructure logo" className="site-logo-mark" />
+        </div>
+        <nav className="site-nav">
+          <a href="/">Home</a>
+        </nav>
+      </header>
+      <div style={container} className="site-container">
         <section style={sectionStyle}>
-          <div
-            style={{
-              textAlign: "center",
-              width: "max-content",
-              position: "relative",
-              left: "calc(50vw - 100px)",
-              transform: "translateX(-50%)",
-            }}
-          >
+          <div className="hero-title">
             <h1 style={heading}>Outcome Infrastructure — Developer Documentation</h1>
           </div>
           <div style={{ textAlign: "center" }}>
@@ -124,7 +66,7 @@ function Docs() {
 
         <section style={sectionStyle}>
           <h2 style={heading}>The four functions of Outcome</h2>
-          <div style={functionsGrid}>
+          <div style={functionsGrid} className="docs-grid">
             <div>
               <h3 style={heading}>1. Governance — Mandate</h3>
               <p style={paragraph}>Mandate enforces hard boundaries.</p>
@@ -219,7 +161,7 @@ function Docs() {
         <hr style={{ border: "1px solid #2A2A2E", margin: "24px 0" }} />
 
         <section style={sectionStyle}>
-          <div style={sectionsGrid}>
+          <div style={sectionsGrid} className="docs-grid">
             <div>
               <h2 style={heading}>Mental model</h2>
               <p style={paragraph}>

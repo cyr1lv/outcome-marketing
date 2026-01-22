@@ -9,7 +9,7 @@ const indicators = [
 
 export function FrictionConsole() {
   return (
-    <ConsoleFrame offsetTop={-1}>
+    <ConsoleFrame>
       <ConsoleLabel>Friction Index</ConsoleLabel>
 
         <div style={{ display: "flex", gap: 16, margin: "16px 0" }}>
@@ -17,8 +17,8 @@ export function FrictionConsole() {
             <div key={indicator.label} style={{ textAlign: "center" }}>
               <div
                 style={{
-                  width: 72,
-                  height: 72,
+                  width: "clamp(56px, 10vw, 72px)",
+                  height: "clamp(56px, 10vw, 72px)",
                   borderRadius: "50%",
                   border: `3px solid ${colors.border}`,
                   display: "flex",
@@ -26,40 +26,75 @@ export function FrictionConsole() {
                   justifyContent: "center",
                   color: colors.text,
                   fontWeight: 600,
+                  fontSize: "clamp(12px, 1.8vw, 14px)",
                 }}
               >
                 {indicator.value}
               </div>
-              <div style={{ fontSize: 10, color: colors.muted, marginTop: 6 }}>
+              <div
+                style={{
+                  fontSize: "clamp(10px, 1.6vw, 11px)",
+                  color: colors.muted,
+                  marginTop: 6,
+                }}
+              >
                 {indicator.label}
               </div>
             </div>
           ))}
         </div>
 
-        <div style={{ color: colors.muted, marginBottom: 16 }}>
+        <div style={{ color: colors.muted, marginBottom: 16, fontSize: "clamp(11px, 1.6vw, 12px)" }}>
           Month-on-Month improvement · 12%+
         </div>
 
         <div style={{ marginTop: 16 }}>
           <ConsoleLabel>Policy guidance</ConsoleLabel>
         </div>
-        <div style={{ marginTop: 6, fontSize: 12 }}>
-          <div style={{ fontSize: 12, color: colors.muted }}>Increase outcome</div>
-          <ul style={{ marginTop: 6, paddingLeft: 18, color: colors.text, fontSize: 11 }}>
+        <div style={{ marginTop: 6, fontSize: "clamp(11px, 1.6vw, 12px)" }}>
+          <div style={{ fontSize: "clamp(11px, 1.6vw, 12px)", color: colors.muted }}>
+            Increase outcome
+          </div>
+          <ul
+            style={{
+              marginTop: 6,
+              paddingLeft: 18,
+              color: colors.text,
+              fontSize: "clamp(10px, 1.5vw, 11px)",
+            }}
+          >
             <li>Loosen interaction limits where risk stays contained</li>
             <li>Allow more autonomy in consistently profitable contexts</li>
           </ul>
-          <div style={{ fontSize: 11, color: colors.muted, marginTop: 10 }}>
+          <div
+            style={{
+              fontSize: "clamp(10px, 1.5vw, 11px)",
+              color: colors.muted,
+              marginTop: 10,
+            }}
+          >
             Reduce risk
           </div>
-          <ul style={{ marginTop: 6, paddingLeft: 18, color: colors.text, fontSize: 11 }}>
+          <ul
+            style={{
+              marginTop: 6,
+              paddingLeft: 18,
+              color: colors.text,
+              fontSize: "clamp(10px, 1.5vw, 11px)",
+            }}
+          >
             <li>Tighten execution scope where friction is too low</li>
             <li>Raise signal confidence before ALLOW in volatile contexts</li>
           </ul>
         </div>
 
-        <div style={{ fontSize: 12, color: colors.muted, marginTop: 16 }}>
+        <div
+          style={{
+            fontSize: "clamp(11px, 1.6vw, 12px)",
+            color: colors.muted,
+            marginTop: 16,
+          }}
+        >
           Improve revenue by adjusting governance — not by increasing activity.
         </div>
     </ConsoleFrame>

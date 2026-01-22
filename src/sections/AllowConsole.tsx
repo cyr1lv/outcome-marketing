@@ -3,19 +3,26 @@ import { colors } from "../styles";
 
 export function AllowConsole() {
   return (
-    <ConsoleFrame offsetTop={-106}>
+    <ConsoleFrame>
       <ConsoleLabel>Decision — ALLOW</ConsoleLabel>
 
         <div style={{ marginTop: 16 }}>
           <ConsoleLabel>Status</ConsoleLabel>
-          <div style={{ fontSize: 28, fontWeight: 700, color: colors.allow, marginTop: 4 }}>
+          <div
+            style={{
+              fontSize: "clamp(22px, 3.2vw, 28px)",
+              fontWeight: 700,
+              color: colors.allow,
+              marginTop: 4,
+            }}
+          >
             ALLOW
           </div>
         </div>
 
         <div style={{ marginTop: 16 }}>
           <ConsoleLabel>Reason</ConsoleLabel>
-          <div style={{ color: colors.text, fontSize: 13, marginTop: 4 }}>
+          <div style={{ color: colors.text, fontSize: "clamp(12px, 1.8vw, 13px)", marginTop: 4 }}>
             All required signals validated
             <br />
             Risk within bounds
@@ -24,7 +31,14 @@ export function AllowConsole() {
 
         <div style={{ marginTop: 16 }}>
           <ConsoleLabel>Signal state</ConsoleLabel>
-          <ul style={{ marginTop: 6, paddingLeft: 18, color: colors.text, fontSize: 12 }}>
+          <ul
+            style={{
+              marginTop: 6,
+              paddingLeft: 18,
+              color: colors.text,
+              fontSize: "clamp(11px, 1.6vw, 12px)",
+            }}
+          >
             <li>Intent confirmed</li>
             <li>Timing optimal</li>
             <li>Value expected</li>
@@ -33,7 +47,7 @@ export function AllowConsole() {
 
         <div style={{ marginTop: 16 }}>
           <ConsoleLabel>System</ConsoleLabel>
-          <div style={{ color: colors.text, fontSize: 12, marginTop: 4 }}>
+          <div style={{ color: colors.text, fontSize: "clamp(11px, 1.6vw, 12px)", marginTop: 4 }}>
             Execution permitted
             <br />
             Within policy limits

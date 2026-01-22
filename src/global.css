@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b0b0c;
+  color: #ededed;
+  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.layout-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 480px);
+  gap: 24px;
+  align-items: start;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 24px;
+  border-bottom: 1px solid #2a2a2e;
+}
+
+.site-logo-frame {
+  border: 3px solid #9a8463;
+  padding: 8px;
+  background: transparent;
+}
+
+.site-logo-mark {
+  width: 95px;
+  height: 95px;
+  background-color: #9a8463;
+  -webkit-mask-image: url(/logo.png);
+  mask-image: url(/logo.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.site-nav {
+  display: flex;
+  gap: 12px;
+  padding: 6px 10px;
+  border: 1px solid #2a2a2e;
+  border-radius: 999px;
+  background: rgba(11, 11, 12, 0.85);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+
+.site-nav a {
+  color: #e6e2da;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.site-nav a:hover {
+  border-bottom-color: #9a8463;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+}
+
+.hero-section {
+  display: grid;
+  gap: 16px;
+}
+
+.hero-body {
+  max-width: 640px;
+  margin: 24px auto 0;
+  text-align: left;
+  display: grid;
+  gap: 12px;
+}
+
+.site-container {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .layout-row {
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+  }
+}
+
+@media (max-width: 980px) {
+  .layout-row {
+    grid-template-columns: 1fr !important;
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-logo-mark {
+    width: 72px;
+    height: 72px;
+  }
+
+  .site-nav {
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 11px;
+    padding: 4px 8px;
+    gap: 8px;
+  }
+
+  .site-container {
+    padding: 24px 16px 48px !important;
+  }
+
+  .docs-grid,
+  .partner-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-container {
+    gap: 24px !important;
+  }
+
+  .layout-row {
+    gap: 16px;
+  }
+
+  .hero-body {
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .console-face {
+    padding: 18px !important;
+    min-height: 240px !important;
+  }
+}

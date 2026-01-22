@@ -4,12 +4,12 @@ import { heading, paragraph, plansGrid, textBlock } from "../styles";
 export function Plans() {
   const [isHover, setIsHover] = useState(false);
   return (
-    <section style={{ width: "100%", marginTop: 48 }}>
+    <section style={{ width: "100%" }}>
       <div style={textBlock}>
         <h2 style={heading}>Plans</h2>
       </div>
 
-      <div style={{ ...plansGrid, marginTop: 25 }}>
+      <div style={{ ...plansGrid, marginTop: 16 }}>
         <div>
           <h3 style={heading}>Start Up</h3>
           <p style={paragraph}>

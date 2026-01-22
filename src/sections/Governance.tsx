@@ -2,7 +2,7 @@ import { heading, paragraph, textBlock } from "../styles";
 
 export function Governance() {
   return (
-    <section style={{ ...textBlock, marginTop: -300 }}>
+    <section style={textBlock}>
       <h2 style={heading}>How Outcome is governed</h2>
       <p style={paragraph}>
         We combine Mandate, enforceable policy packs, the Max Outcome Decision Engine,
