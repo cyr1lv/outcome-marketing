@@ -16,13 +16,15 @@ export default function App() {
   return (
     <main style={page}>
       <header className="site-header">
-        <div className="site-logo-frame">
-          <div role="img" aria-label="Outcome Infrastructure logo" className="site-logo-mark" />
+        <div className="site-header-inner">
+          <div className="site-logo-frame">
+            <div role="img" aria-label="Outcome Infrastructure logo" className="site-logo-mark" />
+          </div>
+          <nav className="site-nav">
+            <a href="/docs">Developer Docs</a>
+            <a href="/partner">Partner</a>
+          </nav>
         </div>
-        <nav className="site-nav">
-          <a href="/docs">Developer Docs</a>
-          <a href="/partner">Partner</a>
-        </nav>
       </header>
       <div style={container} className="site-container">
         <Hero />

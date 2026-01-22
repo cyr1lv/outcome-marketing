@@ -26,12 +26,14 @@ function Docs() {
   return (
     <main style={page}>
       <header className="site-header">
-        <div className="site-logo-frame">
-          <div role="img" aria-label="Outcome Infrastructure logo" className="site-logo-mark" />
+        <div className="site-header-inner">
+          <div className="site-logo-frame">
+            <div role="img" aria-label="Outcome Infrastructure logo" className="site-logo-mark" />
+          </div>
+          <nav className="site-nav">
+            <a href="/">Home</a>
+          </nav>
         </div>
-        <nav className="site-nav">
-          <a href="/">Home</a>
-        </nav>
       </header>
       <div style={container} className="site-container">
         <section style={sectionStyle}>
