@@ -8,7 +8,6 @@ import { FrictionConsole } from "./sections/FrictionConsole";
 import { Governance } from "./sections/Governance";
 import { Plans } from "./sections/Plans";
 import { NativeOutcome } from "./sections/NativeOutcome";
-import { DeveloperDocs } from "./sections/DeveloperDocs";
 import { Closing } from "./sections/Closing";
 import { page, container, row } from "./styles";
 
@@ -51,7 +50,6 @@ export default function App() {
         <Governance />
         <Plans />
         <NativeOutcome />
-        <DeveloperDocs />
         <Closing />
       </div>
     </main>
