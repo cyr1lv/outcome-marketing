@@ -2,9 +2,9 @@ import { ConsoleFrame, ConsoleLabel } from "../components/Console";
 import { colors } from "../styles";
 
 const indicators = [
-  { label: "ALLOW", value: "61%" },
-  { label: "WAIT", value: "23%" },
-  { label: "BLOCK", value: "16%" },
+  { label: "ALLOW", value: "66%" },
+  { label: "WAIT", value: "26%" },
+  { label: "BLOCK", value: "8%" },
 ];
 
 export function FrictionConsole() {
